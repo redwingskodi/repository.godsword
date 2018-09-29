@@ -1,0 +1,32 @@
+﻿<?xml version="2.1" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.GodsWord"
+       name="God's Word"
+       version="1.0.5"
+       provider-name="God's Word">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+
+  </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Non-Denominational Bible Study</summary>
+    <description>
+        Overseen by the Portage church of Christ.  All works provided have granted permission or are publically available and covered under the "fair Usage" act for "Educational Usage".
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
